@@ -1,0 +1,34 @@
+.container {
+  background-color: #f8f8f8;
+  .fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+  }
+
+  .searchWrap {
+    opacity: 0;
+  }
+
+  .search {
+    padding: 10px 0;
+    background-color: #f8f8f8;
+  }
+
+  .filterBar {
+    margin-bottom: 8px;
+    background-color: #fff;
+  }
+
+  .content {
+    padding: 0 16px;
+  }
+
+  .contentEnd {
+    font-size: 14px;
+    text-align: center;
+    color: #c8c8c8;
+    padding: 8px 0;
+  }
+}

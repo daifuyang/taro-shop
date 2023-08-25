@@ -1,0 +1,41 @@
+.filter-bar-wrap {
+  display: flex;
+  height: 40px;
+  color: #717171;
+  font-size: 14px;
+  list-style-type: none;
+  background-color: #fff;
+  // border: 1px solid #f1f1f1;
+  .filter-bar-wrap-item {
+    &.active {
+      color: #ee0a24;
+    }
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    .filter-bar-sort-icon {
+      position: relative;
+      .filter-bar-sort-icon-up,
+      .filter-bar-sort-icon-down {
+        position: absolute;
+        left: 5px;
+        width: 3px;
+        height: 3px;
+        transform: rotate(45deg);
+      }
+      .filter-bar-sort-icon-up {
+        top: -4px;
+        border-top: 1px solid #bbb;
+        border-left: 1px solid #bbb;
+      }
+      .filter-bar-sort-icon-down {
+        bottom: -4px;
+        border-right: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
+      }
+    }
+  }
+}

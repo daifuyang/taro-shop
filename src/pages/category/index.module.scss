@@ -1,0 +1,38 @@
+/* #ifndef h5 */
+:global {
+  page {
+    height: 100%; 
+  }
+}
+/* #endif */
+
+.container {
+  display: flex;
+  /* #ifndef h5 */
+  height: 100%;
+    /* #endif */
+  /* #ifdef h5 */
+  height: 100vh;
+  /* #endif */
+  background-color: #F5F9FA;
+  flex-direction: column;
+
+  .searchWrap {
+    padding: 0 15px;
+    margin: 10px 0;
+    .search {
+      padding: 8px 12px; 
+      background-color: #fff;
+      border-radius: 15px;
+      font-size: 12px;
+      color: #A7A5A5;
+    }
+  }
+
+  .main {
+    display: flex;
+    flex: 1;
+    padding-bottom: calc(50px + env(safe-area-inset-bottom));
+    overflow: hidden;
+  }
+}

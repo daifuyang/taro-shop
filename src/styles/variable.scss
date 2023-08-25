@@ -1,0 +1,11 @@
+/*  #ifdef weapp  */
+page{
+  --primary-color: #F96C2F;
+}
+  /*  #endif  */
+/*  #ifdef h5  */
+:root{
+  --primary-color: #F96C2F;
+}
+  /*  #endif  */
+
